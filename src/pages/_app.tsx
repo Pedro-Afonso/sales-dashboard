@@ -1,4 +1,4 @@
-import { BasicLayout } from '@/shared/layouts/BaseLayout'
+import { BasicLayout } from '@/shared/layouts/BasicLayout'
 import '@/styles/global.scss'
 import type { AppProps } from 'next/app'
 // import { Provider } from 'react-redux'

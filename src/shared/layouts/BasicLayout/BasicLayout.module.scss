@@ -2,6 +2,6 @@
 
 .main {
   .content {
-    padding-left: $drawerWidth;
+    padding: 4rem 4rem 4rem calc($drawerWidth + 4rem);
   }
 }
