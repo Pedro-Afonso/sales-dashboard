@@ -3,9 +3,11 @@
 .drawer {
   background-color: $darkBlack;
   padding: 4rem 0;
-  width: 18rem;
+  width: $drawerWidth;
   position: fixed;
-  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
   z-index: 10;
 
   .image {
