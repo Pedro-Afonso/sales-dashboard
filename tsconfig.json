@@ -16,7 +16,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      // "@/components": ["./src/shared/components"],
+      "@/components": ["./src/shared/components"],
       // "@/themes": ["./src/shared/themes"],
       // "@/config/*": ["./src/shared/config/*"],
       // "@/layouts": ["./src/shared/layouts"],
