@@ -1,3 +1,4 @@
+import { BasicLayout } from '@/shared/layouts/BaseLayout'
 import '@/styles/global.scss'
 import type { AppProps } from 'next/app'
 // import { Provider } from 'react-redux'
@@ -6,7 +7,9 @@ import type { AppProps } from 'next/app'
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     // <Provider store={setupStore()}>
-    <Component {...pageProps} />
+    <BasicLayout>
+      <Component {...pageProps} />
+    </BasicLayout>
     // </Provider>
   )
 }
