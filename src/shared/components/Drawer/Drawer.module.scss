@@ -1,0 +1,54 @@
+@import '@/styles/variables.scss';
+
+.drawer {
+  background-color: $darkBlack;
+  padding: 4rem 0;
+  width: 18rem;
+  position: fixed;
+  height: 100%;
+  z-index: 10;
+
+  .image {
+    margin: 0 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid $secondary;
+  }
+
+  .navigation {
+    ul {
+      text-align: center;
+      list-style: none;
+
+      li {
+        a {
+          text-decoration: none;
+          font-size: 1rem;
+          color: $white;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          padding: 1.5rem 1rem;
+
+          .icon {
+            display: inline-flex;
+            align-items: center;
+          }
+
+          svg {
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-bottom: 0.5rem;
+          }
+
+          &:hover,
+          &.active {
+            background-color: $lightBlack;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
