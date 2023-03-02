@@ -1,4 +1,4 @@
-import { Heading } from '@/components'
+import { Cards, Heading } from '@/components'
 import styles from '@/styles/Home.module.scss'
 
 export default function Home() {
@@ -10,7 +10,9 @@ export default function Home() {
       />
 
       <section className={styles.columns}>
-        <section className={styles.column1}></section>
+        <section className={styles.column1}>
+          <Cards />
+        </section>
         <section className={styles.column2}></section>
       </section>
     </section>
