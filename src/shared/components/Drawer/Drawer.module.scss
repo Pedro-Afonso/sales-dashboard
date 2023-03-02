@@ -1,9 +1,9 @@
 @import '@/styles/variables.scss';
 
 .drawer {
-  background-color: $darkBlack;
+  background-color: $bg-secondary;
   padding: 4rem 0;
-  width: $drawerWidth;
+  width: $drawer-width;
   position: fixed;
   top: 0;
   left: 0;
@@ -46,7 +46,7 @@
 
           &:hover,
           &.active {
-            background-color: $lightBlack;
+            background-color: $bg-primary;
             color: $primary;
           }
         }

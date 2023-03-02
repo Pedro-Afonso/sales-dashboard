@@ -15,7 +15,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: $fontFamily;
+  font-family: $font-family;
 }
 
 h1,
@@ -50,7 +50,7 @@ h4,
   padding: 1rem 4rem;
   font-size: 1.4rem;
   font-weight: 400;
-  font-family: $fontFamily;
+  font-family: $font-family;
 
   &.btn-primary {
     background-color: $primary;
@@ -64,7 +64,7 @@ h4,
 
   &:disabled {
     cursor: default;
-    background-color: $lightBlack;
+    background-color: $bg-primary;
   }
 }
 
@@ -74,7 +74,7 @@ form {
   }
 
   input {
-    font-family: $fontFamily;
+    font-family: $font-family;
     border: none;
     background-color: transparent;
     outline: none;
@@ -84,7 +84,7 @@ form {
 
     &::placeholder {
       color: rgba($black, 0.42);
-      font-family: $fontFamily;
+      font-family: $font-family;
     }
   }
 }
