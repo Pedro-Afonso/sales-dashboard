@@ -10,19 +10,19 @@ export const Cards = () => {
       <Card
         title="Pedidos"
         subtitle="Total em pedidos hoje"
-        content={today.totalOrders.toString()}
+        content={Math.floor(today.totalOrders).toString()}
         icon={<MdShoppingBag />}
       />
       <Card
         title="Vendas"
         subtitle="Total das vendas de hoje"
-        content={today.totalSales.toString()}
+        content={Math.floor(today.totalSales).toString()}
         icon={<MdShoppingBag />}
       />
       <Card
         title="Acumulado"
         subtitle="Total em vendas"
-        content={cumulate.toString()}
+        content={Math.floor(cumulate).toString()}
         icon={<MdShoppingBag />}
       />
     </div>
