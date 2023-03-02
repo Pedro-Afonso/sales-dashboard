@@ -1,4 +1,5 @@
 export * from './Card'
+export * from './Cards'
 export * from './Drawer'
 export * from './Heading'
 export * from './Portal'
