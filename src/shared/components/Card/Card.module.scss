@@ -1,0 +1,48 @@
+@import '@/styles/variables.scss';
+
+.card {
+  display: grid;
+  grid-template:
+    'a b'
+    'a c'
+    'a d' 1fr/ 10rem 1fr;
+  background-color: $bg-secondary;
+  width: 30rem;
+  height: 10rem;
+  border-radius: 1rem;
+  text-align: center;
+
+  h3 {
+    grid-area: b;
+    margin: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  h4 {
+    grid-area: c;
+  }
+
+  h5 {
+    grid-area: d;
+    font-size: 2.6rem;
+    line-height: 1.5;
+  }
+
+  .icon {
+    color: $primary;
+    border-radius: 1rem;
+    place-self: center;
+    grid-area: a;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: $bg-tertiary;
+    display: inline-flex;
+    align-items: center;
+
+    svg {
+      margin: 0 auto;
+      font-size: 2.4rem;
+    }
+  }
+}

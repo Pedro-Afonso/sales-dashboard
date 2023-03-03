@@ -12,7 +12,8 @@ const rootReucer = combineReducers({
 export const setupStore = () =>
   configureStore({
     reducer: rootReucer,
-    middleware: gDM => gDM().concat(dashboardApi.middleware)
+    middleware: gDM => gDM().concat(dashboardApi.middleware),
+    devTools: true
   })
 
 export type AppStore = ReturnType<typeof setupStore>

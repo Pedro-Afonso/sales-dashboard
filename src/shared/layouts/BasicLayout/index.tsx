@@ -15,8 +15,8 @@ interface IBasicLayoutProps {
 }
 
 export const BasicLayout: FC<IBasicLayoutProps> = ({ children }) => {
-  const { isLoading: isLoadingOrders } = useGetOrdersQuery()
   const { isLoading: isLoadingProducts } = useGetProductsQuery()
+  const { isLoading: isLoadingOrders } = useGetOrdersQuery()
   const { isLoading: isLoadingSettings } = useGetSettingsQuery()
 
   const isLoading = isLoadingOrders || isLoadingProducts || isLoadingSettings
